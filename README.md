@@ -3,7 +3,6 @@ Repository for Web Client Development Assignment on Aperture Shots
 
 *Things to do*
 * Javascript gallery implementation
-* Isotope implementation
 * Scroll Reveal implementation
 * Form HTML + JS Validation
 * Contact Us HTML
@@ -12,3 +11,4 @@ Repository for Web Client Development Assignment on Aperture Shots
 
 *Things that I've accomplished*
 * Basic navigation system
+* Isotope Implementation
