@@ -86,3 +86,8 @@ $FilterLinks.find('a').click(function(){
 //new scrollReveal(config);
 
 });
+
+function sumbitFunction() {
+
+  var x = document.forms["contactForm"]
+}
