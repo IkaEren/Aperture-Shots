@@ -8,3 +8,6 @@ Repository for Web Client Development Assignment on Aperture Shots
 * Form HTML + JS Validation
 * Contact Us HTML
 * About Us HTML
+
+*Things that I've accomplished*
+* Basic navigation system
