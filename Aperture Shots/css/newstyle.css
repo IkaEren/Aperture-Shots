@@ -54,7 +54,7 @@ body {
 }
 
 
-h1, h3, h5{
+h1, h3, h5 {
   font-family: 'Montserrat',sans-serif;
 }
 
@@ -190,7 +190,7 @@ h6 {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  font-weight: 900;
+  font-weight: 400;
 }
 
 .navigation ul li a.current,
@@ -307,10 +307,10 @@ ul {
   display: inline-block;
   border: 2px solid #222;
   color: #222;
-  font-family: "amblebold";
+  font-family: 'Montserrat',sans-serif;
   background-color: transparent;
   text-align: center;
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 600;
   text-decoration: none;
   cursor: pointer;
@@ -337,8 +337,8 @@ ul {
   height: auto;
   border: 3px solid white;
   text-transform: none;
-  font-size: 26px;
-  font-family: "ambleregular";
+  font-size: 22px;
+  font-family: 'Montserrat',sans-serif;
 }
 
 .button.inverted:hover {

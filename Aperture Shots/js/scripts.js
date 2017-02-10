@@ -73,28 +73,5 @@ $(document).ready(function(){
       }
   });
 
-  // Scrollreveal initialize
 
-  var config = {
-
-    easing: 'hustle',
-    reset:  false,
-    delay:  'onload',
-    opacity: .2,
-    vFactor: 0.2,
-    mobile: false
-  }
-
-  window.sr = new scrollReveal( config );
-
-  // Fancybox
-
-  $(".video-play").fancybox({
-    fitToView : true,
-    width   : '100%',
-    autoSize  : true,
-    closeClick  : false,
-    openEffect  : 'none',
-    closeEffect : 'none'
-  });
 });
