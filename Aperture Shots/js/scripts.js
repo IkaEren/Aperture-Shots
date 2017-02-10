@@ -14,31 +14,6 @@ $(document).ready(function(){
     $heroContainer.height(window.innerHeight);
   });
 
-  // =Work
-  // Isotope filters
-
-  var $workFilterLinks = $('.work-filters li'),
-      $container = $('.work-items');
-
-  $workFilterLinks.find('a').click(function(){
-
-    $workFilterLinks.removeClass('active');
-
-    $container.isotope({
-      // options
-      filter: $(this).attr('data-filter'),
-      itemSelector: '.isotope-item',
-      animationEngine : "best-available",
-      masonry: {
-        columnWidth: '.isotope-item'
-      }
-    });
-
-    $(this).parent().addClass('active');
-
-    return false;
-  });
-
   // Menu initialization
 
   var $menuIcon = $('.menu-icon'),
@@ -73,5 +48,41 @@ $(document).ready(function(){
       }
   });
 
+// Isotope filters
+var $FilterLinks = $('.filters li'),
+    $container = $('.photos');
+
+$FilterLinks.find('a').click(function(){
+
+  $FilterLinks.removeClass('active');
+
+  $container.isotope({
+    // options
+    filter: $(this).attr('data-filter'),
+    itemSelector: '.isotope-item',
+    animationEngine : "best-available",
+    masonry: {
+      columnWidth: '.isotope-item'
+    }
+  });
+
+  $(this).parent().addClass('active');
+
+  return false;
+});
+
+  // Scrollreveal initialize
+  //var config = {
+    //origin: 'bottom',
+    //container: '.landingpage',
+    //easing: 'hustle',
+    //reset:  false,
+    //useDelay: 'always',
+    //opacity: .1,
+    //viewFactor: 0.2,
+    //mobile: true
+  //};
+
+//new scrollReveal(config);
 
 });

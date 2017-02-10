@@ -5,70 +5,66 @@ Done by: Zamiel Chia,
          DIT/FT/1A/23,
          Web Client Development
 -->
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Aperture Shots™ | Singapore Photography Film</title>
-    <link rel="stylesheet" href="css/newstyle.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-</head>
-
-<body>
-    <nav>
-        <ul id="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#" class="active">About us</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Projects</a>
-                <div class="dropdown-content">
-                    <a href="gallery1.html">Street</a>
-                    <a href="undercons.html">Architectural</a>
-                    <a href="undercons.html">Modeling</a>
-                </div>
-            </li>
-            <li><a href="undercons.html">Services</a></li>
-            <li><a href="undercons.html">Contact Us</a></li>
+<html lang="en">
+  <head>
+      <!-- Basic Website Needs -->
+      <meta charset="utf-8">
+      <meta name="description" content="This website is solely made for Aperture Shots and it makes the audience wanting for more.">
+      <meta name="author" content="Zamiel Chia">
+      <!-- Making sure the web-site will scale fine on mobiles-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Title of the Website -->
+      <title>Aperture Shots™ | Singapore Photography Film</title>
+      <!-- CSS Stylesheet -->
+      <link rel="stylesheet" href="css/newstyle.css" />
+      <link rel="stylesheet" href="css/normalize.css">
+      <!-- Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <!-- Favicons -->
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <!-- Javascript -->
+      <script type="text/javascript" src="js/jquery.2.1.3.min.js"></script>
+      <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+      <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+      <script type="text/javascript" src="js/singlenav.js"></script>
+      <script type="text/javascript" src="js/jquery.fancybox.js"></script>
+      <script type="text/javascript" src="js/scripts.js"></script>
+  </head>
+  <body>
+      <!-- Navigation Bar -->
+      <nav class="navigation">
+        <!-- TBD -->
+        <a href="#" class="menu-icon">
+          <i class="fa fa-bars"></i>
+        </a>
+        <ul class="main-navigation">
+          <li><a href="index.html" class="external">Home</a></li>
+          <li><a href="index.html#introduction" class="external">Introduction</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="index.html#why-us" class="external">Why Us</a></li>
+          <li><a href="portfolio.html" class="external">Portfolio</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
         </ul>
-    </nav>
-
-    <div class="container">
-        <!-- Logo -->
-        <img src="newlogo.png" alt="Logo" class="logo">
-        <div class="customHr">.</div>
-        <div id="about-us">
-            <h1 class="about">About us</h1>
-            <p>
-              Self-taught and driven by his eyes for details, Qian Hui's sincerity to the people around
-              him comes through in his pictures. He first started covering events and later went on
-              to specialize in many types of photography while diversifying his range. He is one to go
-              two extra miels for you, so when Qian Hui shoots for you, feel free to celebrate!
-            </p>
+      </nav>
+      <!-- End of Navigation Bar-->
+      <!-- Portfolio -->
+      <section id="portfolio" class="about-us fullwidth">
+        <div class="container">
+          <div class="row">
+            <div class="twelve column">
+              <h3 class="separator">Clear thinking brought to life with imagination</h3>
+            </div>
+          </div>
         </div>
-        <img src="images/aboutus.JPG" alt="" class="aboutuspic">
-        <div class="customHr">.</div>
-        <h1 class="meet">Meet the Team</h1>
-        <ul class="row">
-            <li class="person">
-                <img src="images/placeholder.jpg" alt="">
-                <p><span>Zamiel Chia</span></p>
-                <p>Designer</p>
-            </li>
-            <li class="person">
-                <img src="images/placeholder.jpg" alt="">
-                <p><span>Low Ming Chin</span></p>
-                <p>Assistant Photographer</p>
-            </li>
-            <li class="person">
-                <img src="images/placeholder.jpg" alt="">
-                <p><span>Yee Qian Hui</span></p>
-                <p>Main Photographer</p>
-            </li>
-        </ul>
-    </div>
-</body>
-
-<footer>
-    Copyright 2016 Aperture Shots
-</footer>
-
+      </section>
+      <!-- Footer -->
+      <section id="footer" class="footer fullwidth">
+        <div class="container">
+          <div class="twelve container">
+            <h5>Aperture Shot™ 2017</h5>
+          </div>
+        </div>
+      </section>
+  </body>
 </html>

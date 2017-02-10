@@ -115,7 +115,7 @@ h6 {
 
 /* Navigation */
 .navigation .menu-icon {
-  color: white;
+  color: black;
   font-size: 30px;
   line-height: 1em;
 
@@ -134,7 +134,7 @@ h6 {
   background-color: rgba(0,0,0, .3);
 }
 .navigation .menu-icon:hover {
-  color: #222;
+  color: grey;
   background-color: transparent;
 }
 
