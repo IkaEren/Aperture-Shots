@@ -40,6 +40,10 @@ Done by: Zamiel Chia
   font-size: 36px;
 }
 
+.fa-external-link:before {
+  content: "\f16d";
+}
+
 html {
     overflow: scroll;
     overflow-x: hidden;
@@ -89,17 +93,27 @@ h6 {
   letter-spacing: 0;
 }
 
-.introduction h4 , .contact h4 {
+.introduction h4 ,
+.contact h4 ,
+.about h4 {
   font-size: 20px;
 }
 
+.contact2 h4 {
+  font-size: 22px;
+}
 .landingpage h2 {
   font-size: 24px;
 }
-.introduction h3 , .contact h3 {
+.introduction h3 ,
+.contact h3 ,
+.about h3{
   font-size: 26px;
 }
 
+.about button {
+  padding: 0 20px;
+}
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
@@ -261,7 +275,8 @@ ul {
   box-sizing: border-box;
 }
 
-.row .four:first-child {
+.row .four:first-child ,
+.row .three:first-child {
   margin-left: 0;
 }
 
@@ -367,6 +382,9 @@ section {
   background-position: 50% 0;
 }
 
+.contact2::before {
+  background: url("../images/IMG_8311.jpg")
+}
 .bg-image:before {
   content: '';
   position: absolute;
@@ -395,6 +413,16 @@ section {
   transform: translate(-50%,-50%);
 }
 
+.vertical-centered {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
 .filters {
   list-style: none;
 }
@@ -434,6 +462,102 @@ section {
   margin: 25px;
   height: auto;
   width: 100%;
+}
+
+/* Clients */
+.clients {
+  list-style: none;
+}
+.clients li {
+  display: inline-block;
+  width: 18%;
+  margin-right: 2%;
+}
+.clients li:last-child {
+  margin-right: 0;
+}
+.clients li img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  -webkit-filter: greyscale(100%);
+  -moz-filter: greyscale(100%);
+  filter: greyscale(100%);
+}
+
+/* About */
+.people-list {
+  list-style: none;
+  margin: 70px 0;
+  width: 100%;
+}
+.people-list li {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+.people-list li img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.people-list .people-hover {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  background: rgba(0,0,0,.45);
+
+  opacity: 0;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.people-list .people-hover a {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+}
+
+/* About people details */
+
+.people-list .people-detail {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0 20px;
+  z-index: 1;
+  color: white;
+}
+.people-list .people-detail h3 {
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.people-list .people-detail p {
+  font-size: 16px;
+}
+
+/* Feature people hiring */
+
+.people-list li.blank-feature{
+  box-shadow: inset 0 0 0 3px #222;
+}
+.people-list li.blank-feature img {
+  visibility: hidden;
+}
+.people-list li.blank-feature h3 {
+  font-size: 26px;
+}
+
+
+.people-list li:hover .people-hover{
+  opacity: 1;
+  box-shadow: inset 0 0 0 5px #222;
 }
 
 
@@ -476,7 +600,6 @@ textarea {
 }
 
 form {
-  padding: 37.5px;
   margin: 50px 0;
 }
 
@@ -493,7 +616,7 @@ textarea {
 }
 
 #subject_input {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 /* Media Queries on devices larger than 550px */
 @media (min-width: 550px) {
@@ -509,6 +632,9 @@ textarea {
     margin-left: 0;
   }
 
+  .container .three {
+    width: 22%;
+  }
   .container .six {
     width: 48%;
   }
