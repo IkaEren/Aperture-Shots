@@ -3,15 +3,15 @@ $(document).ready(function(){
   // =Hero
   // Alway make hero-container height equal to window height
 
-  var $heroContainer = $('.hero');
+  var $landingpageContainer = $('.landingpage');
 
-  $heroContainer.height(window.innerHeight);
+  $landingpageContainer.height(window.innerHeight);
 
   // When user resize browser window, hero container needs to have the same
   // height as browser window height.
 
   $(window).resize(function() {
-    $heroContainer.height(window.innerHeight);
+    $landingpageContainer.height(window.innerHeight);
   });
 
   // Menu initialization
@@ -84,10 +84,17 @@ $FilterLinks.find('a').click(function(){
   //};
 
 //new scrollReveal(config);
-
+// Fancybox initialization
+  $(".fancybox").fancybox();
 });
-
-function sumbitFunction() {
-
-  var x = document.forms["contactForm"]
-}
+$(document).ready(function() {
+  $('.filters a').on("click", function(){
+      var selector = $(this).attr('data-filter');
+      if(selector == "*"){
+          $(".fancybox").attr("data-fancybox-group", "gallery");
+      } else{
+          $(selector).find(".fancybox").attr("data-fancybox-group", selector);
+      }
+     return false;
+  });
+});

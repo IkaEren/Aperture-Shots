@@ -3,12 +3,8 @@ Repository for Web Client Development Assignment on Aperture Shots
 
 *Things to do*
 * Scroll Reveal implementation
-* About Us HTML
-* Fonts consistency
 * Quality of Life changes
-* Improvement on form designs
-* Add more dank photoss
-* Improvements on About us + Contact us
+* Code clean up
 
 *Things that I've accomplished*
 * Basic navigation system
@@ -18,3 +14,8 @@ Repository for Web Client Development Assignment on Aperture Shots
 * Contact Us HTML
 * About Us HTML
 * JS Validation ( Gave up )
+* Fonts consistency
+* Form Designs ( Gave up )
+* Add more dank photoss
+* Improvements on About us + Contact us
+* About Us HTML
