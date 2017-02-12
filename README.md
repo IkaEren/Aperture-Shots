@@ -4,7 +4,9 @@ Repository for Web Client Development Assignment on Aperture Shots
 *Things to do*
 * Scroll Reveal implementation
 * Quality of Life changes
-* Code clean up
+* Bug fix ( if any )
+* Fix Form HTML Validation
+* Add location 
 
 *Things that I've accomplished*
 * Basic navigation system
@@ -19,3 +21,6 @@ Repository for Web Client Development Assignment on Aperture Shots
 * Add more dank photoss
 * Improvements on About us + Contact us
 * About Us HTML
+* Validated CSS + HTML ( except form hehe )
+* Code Clean Up
+* Directory Clean up
