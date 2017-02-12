@@ -4,7 +4,6 @@ $(document).ready(function(){
   // Alway make landing page-container height equal to window height
 
   var $landingpageContainer = $('.landingpage');
-
   $landingpageContainer.height(window.innerHeight);
 
   // When user resize browser window, landing page container needs to have the same
@@ -30,7 +29,6 @@ $(document).ready(function(){
 
   $menuIcon.click(function(e) {
     e.preventDefault();
-
     $navigation.toggleClass('active');
   });
 
@@ -64,38 +62,37 @@ $FilterLinks.find('a').click(function(){
       columnWidth: '.isotope-item'
     }
   });
-
   $(this).parent().addClass('active');
-
   return false;
 });
 
+  // Doesn't work with the gallery , gave up cause no time. x.x
   // Scrollreveal initialize
-  window.sr = ScrollReveal({
-    distance: '20px',
-    origin: 'bottom',
-    duration: 500,
-    delay: 0,
-    mobile: false,
-    reset: true,
-    useDelay: 'always',
-    viewFactor: 0.2,
-
-  });
-  sr.reveal('.introduction');
-  sr.reveal('.about-us');
-  sr.reveal('.whyus');
-  sr.reveal('.portfolio');
-  sr.reveal('.contact');
-  sr.reveal('.mission');
-  sr.reveal('.testimony');
-  sr.reveal('.clients');
-  sr.reveal('.testimony1');
-  sr.reveal('.about')
+  // window.sr = ScrollReveal({
+  //   distance: '20px',
+  //   origin: 'bottom',
+  //   duration: 500,
+  //   delay: 0,
+  //   mobile: false,
+  //   reset: true,
+  //   useDelay: 'always',
+  //   viewFactor: 0.2,
+  // });
+  //
+  // sr.reveal('.introduction');
+  // sr.reveal('.about-us');
+  // sr.reveal('.whyus');
+  // sr.reveal('.portfolio');
+  // sr.reveal('.contact');
+  // sr.reveal('.mission');
+  // sr.reveal('.testimony');
+  // sr.reveal('.clients');
+  // sr.reveal('.testimony1');
 
 // Fancybox initialization
   $(".fancybox").fancybox();
 });
+
 $(document).ready(function() {
   $('.filters a').on("click", function(){
       var selector = $(this).attr('data-filter');

@@ -2,11 +2,7 @@
 Repository for Web Client Development Assignment on Aperture Shots
 
 *Things to do*
-* Scroll Reveal implementation
-* Quality of Life changes
-* Bug fix ( if any )
-* Fix Form HTML Validation
-* Add location 
+* Form Html Fix
 
 *Things that I've accomplished*
 * Basic navigation system
