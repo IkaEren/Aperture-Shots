@@ -1,15 +1,14 @@
 $(document).ready(function(){
 
   // =Hero
-  // Alway make hero-container height equal to window height
+  // Alway make landing page-container height equal to window height
 
   var $landingpageContainer = $('.landingpage');
 
   $landingpageContainer.height(window.innerHeight);
 
-  // When user resize browser window, hero container needs to have the same
+  // When user resize browser window, landing page container needs to have the same
   // height as browser window height.
-
   $(window).resize(function() {
     $landingpageContainer.height(window.innerHeight);
   });
@@ -72,18 +71,28 @@ $FilterLinks.find('a').click(function(){
 });
 
   // Scrollreveal initialize
-  //var config = {
-    //origin: 'bottom',
-    //container: '.landingpage',
-    //easing: 'hustle',
-    //reset:  false,
-    //useDelay: 'always',
-    //opacity: .1,
-    //viewFactor: 0.2,
-    //mobile: true
-  //};
+  window.sr = ScrollReveal({
+    distance: '20px',
+    origin: 'bottom',
+    duration: 500,
+    delay: 0,
+    mobile: false,
+    reset: true,
+    useDelay: 'always',
+    viewFactor: 0.2,
 
-//new scrollReveal(config);
+  });
+  sr.reveal('.introduction');
+  sr.reveal('.about-us');
+  sr.reveal('.whyus');
+  sr.reveal('.portfolio');
+  sr.reveal('.contact');
+  sr.reveal('.mission');
+  sr.reveal('.testimony');
+  sr.reveal('.clients');
+  sr.reveal('.testimony1');
+  sr.reveal('.about')
+
 // Fancybox initialization
   $(".fancybox").fancybox();
 });

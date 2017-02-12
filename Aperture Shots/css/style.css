@@ -116,7 +116,10 @@ h6 {
 .contact h4 ,
 .about h4,
 .mission h4,
-.clients h4 {
+.clients h4,
+.testimony h4,
+.testimony1 h4,
+.testimony2 h4 {
   font-size: 20px;
 }
 
@@ -439,10 +442,17 @@ h6 {
   background: url("../assets/testimony.jpg");
   background-position: 50% 0;
 }
+
 .testimony1::before {
   background: url("../assets/testimony1.jpg");
   background-position: 50% 0;
 }
+
+.testimony2::before {
+  background: url("../assets/testimony2.jpg");
+  background-position: 50% 0;
+}
+
 .bg-image:before {
   content: '';
   position: absolute;
